@@ -17,7 +17,7 @@
   ext.latestUserTweet = function(name, callback) {
     $.ajax({
       method: "GET",
-      url: "http://scratchx-twitter.herokuapp.com/1.1/statuses/user_timeline.json",
+      url: "//scratchx-twitter.herokuapp.com/1.1/statuses/user_timeline.json",
       data: {
         screen_name: name,
         count: 1
@@ -44,7 +44,7 @@
     }
     $.ajax({
       method: "GET",
-      url: "http://scratchx-twitter.herokuapp.com/1.1/search/tweets.json",
+      url: "//scratchx-twitter.herokuapp.com/1.1/search/tweets.json",
       data: {
         q: encodeURIComponent(str),
         result_type: sort,
